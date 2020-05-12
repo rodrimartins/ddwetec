@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Rodrigo e Maromo">
+    <meta name="description" content="Aula de DDW">
+    <meta name="keywords" content="html,html5,php,css">
+    <title>Aula de DDW - 11/02/2020</title>
+</head>
+
+<body>
+    <div>
+        <!-- container principal-->
+        <div>
+            <!-- cabeçalho-->
+            <div>
+                <!-- menu -->
+                <hr><br>
+                <nav>
+                    <a href="index.html"> HOME </a> |
+                    <a href="paghtml.html"> HTML </a> |
+                    <a href="pagcss.html"> CSS </a> |
+                    <a href="pagjava.html"> JAVA SCRIPT </a> |
+                    <a href="pagsql.html"> SQL </a> |
+                    <a href="pagpython.html"> PYTHON </a> |
+                    <a href="pagphp.html"> PHP </a> |
+                    <a href="pagbootstrap.html"> BOOTSTRAP </a>
+                </nav>
+                <br>
+                <hr>
+            </div>
+        </div>
+
+        <div>
+            <!-- conteúdo-->
+            <h1>Cadastro de Alunos</h1>
+            <form action="cadastro.php" method="post">
+                <p>
+                    <label for="nome">Nome do Aluno:</label>
+                    <input type="text" name="txtNome" id="nome"
+                    size="40">
+
+                    <label for="usuario">Nome de Usuário:</label>
+                    <input type="text" name="txtUsuario" id="usuario"
+                    placeholder="Máximo 10 caracteres" maxlength="10">
+
+                    <label for="senha">Crie sua senha:</label>
+                    <input type="password" name="txtSenha" id="senha"
+                    placeholder="Máximo 8 caracteres" maxlength="8">
+                </p>
+                <p>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="txtEndereco" id="endereco"
+                    size="40">
+
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="txtBairro" id="bairro" size="30">
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="txtCidade" id="cidade" size="30">
+
+                    <label for="estado">Selecione o Estado:</label>
+                    <select name="txtSP" id="estado">
+                        <option value="sp">SP</option>
+                        <option value="rj">RJ</option>
+                        <option value="mg">MG</option>
+                        <option value="ce">CE</option>
+                        <option value="pi">PI</option>
+                        <option value="es">ES</option>
+                        <option value="pr">PR</option>
+                        <option value="ba">BA</option>
+                        <option value="pa">PA</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="telefoneRes">Telefone Residencial:</label>
+                    <input type="tel" name="txtTelRes" id="telefoneRes"
+                    placeholder="(00)0000-0000">
+
+                    <label for="telefoneCel">Telefone Celular:</label>
+                    <input type="tel" name="txtTelCel" id="telefoneCel"
+                    placeholder="(00)00000-0000">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="txtEmail" id="email" size="50"
+                    placeholder="seuemail@dominio.com">
+                </p>
+                <p>
+                    <label for="url">Site:</label>
+                    <input type="url" name="txtUrl" id="url"
+                    placeholder="http:\\seusite.com.br" size="50">
+                </p>
+                <p>
+                    <label for="nota">Nota:</label>
+                    <input type="number" name="txtNota" id="nota"
+                    max="10" min="0" step="0.5">
+
+                    <label for="volume">Volume:</label>
+                    <input type="range" name="txtVolume" id="volume"
+                    max="10" min="0" step="2">
+
+                    <label for="dataNasc">Data de Nascimento:</label>
+                    <input type="date" name="txtDataNasc" id="dataNasc"
+                    min="2020-01-01" max="2020-12-31">
+
+                    <label for="hora">Tempo de Entrega:</label>
+                    <input type="time" name="txtHora" id="hora"
+                    max="23:00" min="19:00" step="300">
+
+                    <p>
+                        <input type="file" name="txtArquivo" id="arquivo">
+                    </p>
+                </p> 
+                <p>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                    <input type="button" value="VALIDAR NOME" name="btnValidar"
+                    onclick="validar();">
+                </p>    
+            </form>
+        </div>
+
+        <div>
+            <!-- rodapé-->
+
+            <footer>
+                <!-- tag para inserção do rodapé-->
+                <p>
+                    Copyright © 2020 ETEC - Pedro Ferreira Alves.
+                    Todos os direitos reservados.
+                    Rua Ariovaldo Silveira Franco, 237, Jd. Brasília,
+                    Mogi Mirim - SP
+                </p>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
