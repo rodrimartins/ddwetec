@@ -1,0 +1,15 @@
+.classe1
+{
+    background-color: antiquewhite;
+}
+
+
+#alinhamentoDireita{
+    text-align: right;
+}
+
+p{
+    font-family: cursive;
+    font-size:20px;
+    color:red;
+}
